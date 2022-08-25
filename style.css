@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0px black;
+    position: sticky;
+    top: 0;left: 0;
+}
+.navbar p{
+    font-size: 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: tomato;
+    font-weight:500;
+}
+.navbar span{
+    color: black;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin:0px 20px;
+}
+ul li a{
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 2.2px;
+    background-color: tomato;
+    display: block;
+    transition: .5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+
+#home{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("./img/banner.png") no-repeat center center/cover;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 20px; */
+}
+.homebox{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 500px;
+    /* border: 2px solid white; */
+    /* background:inherit; */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    --webkit-backdrop-filter:blur(2px);
+
+}
+.homebox h1{
+    font-size: 4rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.homebox p{
+    font-size: 1.3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-top: 10px;
+}
+.homebox .btn{
+    text-decoration: none;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    margin-top: 30px;
+    background: transparent;
+    border: 1px solid white;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+    /* color: white; */
+    cursor: pointer;
+    background: white;
+    color: black;
+    transition: .5s;
+}
+.homebox .btn:hover{
+    background: none;
+    color: white;
+    /* box-shadow: 0 0 20px 0px white; */
+}
+
+
+
+#post{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    background-color: #eee;
+    /* top: 0; */
+    padding-top: 20px;
+}
+.first{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 10px ;
+    margin-top: 50px;
+    box-shadow: 0 0 10px 0px gray;
+}
+.first .image{
+    border-radius: 10px;
+    height: 30rem;
+    width:100%;
+    object-fit: cover;
+}
+
+.first h2{
+    color: tomato;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+.first p{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+
+.second{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 10px ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px 0px gray;
+}
+.second .image{
+    border-radius: 10px;
+    height: 30rem;
+    width:100%;
+    object-fit: cover;
+}
+
+.second h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: tomato;
+}
+.second p{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+.about{
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 0 0 10px 0px gray;
+}
+.about h1{
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+.about .user{
+    border-radius: 20%;
+    width: 180px;
+    margin: 20px;
+    height: 180px;
+}
+.about h3{
+    font-size: 1.5rem;
+    color: tomato;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -10px;
+}
+.about p{
+    padding: 0px 30px;
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.about .icon i{
+    margin: 15px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-top: 30px;
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 0 20px 0px black;
+    transition: .3s;
+}
+.about .icon .fa-facebook{
+    padding: 10px 13px;
+}
+.about .icon i:hover{
+    color:white;
+    background: tomato;
+    /* border: 2px solid tomato; */
+    box-shadow: 0 0 20px 0px tomato;
+}
+
+.categories{
+    box-shadow: 0 0 10px 0px gray;
+    margin-top: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.categories .list{
+    display: flex;
+    flex-direction: column;
+}
+.categories .list p{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.categories .list p:hover{
+    color:tomato;
+    
+}
+
+
+.categories .list span{
+    border: 1px solid gray;
+    /* background: gray; */
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+
+
+#contact{
+    background: url("./img/desert.jpg") no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    /* border: 2px solid white; */
+
+    height: 400px;
+    width: 500px;
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    text-align: center;
+    backdrop-filter: blur(2px);
+    --webkit-backdrop-filter:blur(2px);
+}
+input{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: rgb(227, 227, 227);
+    margin: 15px;
+}
+textarea{
+    font-size: 1rem;
+    background-color: transparent;
+    margin: 15px;
+    border: 1px solid white;
+    color: white;
+}
+form a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 5px 15px;
+    color: white;
+    transition: .5s;
+}
+form a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    background-color:rgb(249, 249, 249);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0px black;
+    /* border-top: 2px solid gray; */
+}
+.footop{
+    /* border: 2px solid white; */
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footop .bx1{
+    /* border: 2px solid white; */
+    width: 25%;
+}
+.footop .bx1 h1{
+    color: black;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footop .bx1 p{
+    margin-top: 20px;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footop .bx2{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+.footop .bx2 h2{
+    color: black;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+.footop .bx2 a{
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+    transition: .3s;
+    /* border: 2px solid white; */
+    width: 35%;
+}
+.footop .bx2 a:hover{
+    /* text-decoration: underline; */
+    color: black;
+}
+.footop .bx3{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+.footop .bx3 h2{
+    color: black;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+.footop .bx3 p{
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footop .bx4{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+.footop .bx4 h2{
+    color: black;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+.footop .bx4 .icon{
+    /* border: 2px solid white; */
+    padding: 10px 0px ;
+}
+.footop .bx4 .icon i{
+    color: black;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    /* border: 2px solid white; */
+    padding: 5px;
+    border-radius: 50%;
+}
+.footop .bx4 .icon .fa-facebook{
+    padding: 5px 8px;
+}
+.footop .bx4 .icon i:hover{
+    color: var(--backcolor);
+    box-shadow: 0 0 30px 0px gray;
+    background-color: gray;
+}
+.footbot{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.footbot p{
+    color: black;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+.footbot p span{
+    color: gray;
+}
